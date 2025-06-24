@@ -1,0 +1,63 @@
+---
+title: '/hang'
+description: 'Szöveget hanggá alakító parancs'
+---
+
+# /hang parancs
+
+A `/hang` parancs lehetővé teszi, hogy a beírt szöveget természetesen hangzó beszéddé alakítsd különböző hangokkal és nyelveken.
+
+## Használat
+
+```
+/hang [szöveg] [hang] [nyelv]
+```
+
+### Paraméterek
+
+| Paraméter | Típus | Leírás | Kötelező |
+|-----------|------|---------|----------|
+| szöveg | szöveg | Az átalakítandó szöveg | Igen |
+| hang | választás | A beszédhang típusa | Nem |
+| nyelv | választás | A beszéd nyelve | Nem |
+
+## Példák
+
+- `/hang Üdvözlöm mindenkit! Örülök, hogy itt vagytok.`
+- `/hang Ez egy példa szöveg hang: női nyelv: magyar`
+- `/hang This is an example of English text hang: férfi nyelv: angol`
+- `/hang Ez egy vidám kis szöveg, amit fel fogok olvasni hang: játékos nyelv: magyar`
+
+## Elérhető hangok
+
+- **Férfi**: Alapértelmezett férfi hang
+- **Női**: Alapértelmezett női hang
+- **Idős**: Idősebb férfi hang
+- **Játékos**: Vidám, energikus hang
+- **Komoly**: Hivatalos, komoly hang
+- **Narrátor**: Történetmeséléshez optimalizált hang
+
+## Támogatott nyelvek
+
+- **Magyar**: Alapértelmezett nyelv
+- **Angol**: Amerikai angol
+- **Német**: Sztenderd német
+- **Francia**: Sztenderd francia
+- **Spanyol**: Európai spanyol
+- **Olasz**: Sztenderd olasz
+
+## Korlátozások
+
+- **Szöveghossz**: Maximum 500 karakter ingyenes felhasználóknak, 2000 karakter [prémium](/HeroAI/kezdes/premium) felhasználóknak
+- **Napi limit**: Ingyenes felhasználók napi 5 hangfájlt generálhatnak, prémium felhasználók napi 30-at
+- **Tartalom**: A bot nem alakít át sértő vagy nem megfelelő tartalmú szöveget
+- **Hangminőség**: Alap hangminőség 128kbps, prémium felhasználók 256kbps minőséget érhetnek el
+- **Fájlformátum**: A generált hangfájlok MP3 formátumban érhetők el
+- **Elérhetőség**: A generált hangfájlok 24 óráig érhetők el letöltésre
+
+## Tippek
+
+- A legjobb eredmény érdekében használj helyes írásjeleket (pont, vessző)
+- Ha a kiejtés nem megfelelő, próbáld más formában leírni a szöveget
+- Idegen szavak esetén válaszd a megfelelő nyelvet a helyes kiejtéshez
+- Hosszabb szöveg esetén érdemes több részre bontani a mondanivalót 

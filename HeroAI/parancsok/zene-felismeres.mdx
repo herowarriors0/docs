@@ -1,0 +1,71 @@
+---
+title: '/zene-felismeres'
+description: 'Azonosíts zeneszámokat a HeroAI segítségével'
+---
+
+# /zene-felismeres parancs
+
+A `/zene-felismeres` parancs lehetővé teszi, hogy azonosítsd a háttérben szóló zenét vagy hangfelvételeket. A bot felismeri a dalok címét, előadóját és egyéb információkat.
+
+## Használat
+
+```
+/zene-felismeres [fájl]
+```
+
+vagy a bot hangcsatornában történő aktiválásával:
+
+```
+"Hey Hero, mi ez a zene?"
+```
+
+### Paraméterek
+
+| Paraméter | Típus | Leírás | Kötelező |
+|-----------|------|---------|----------|
+| fájl | hangfájl | Feltöltött hangfájl vagy felvétel | Nem |
+
+## Példák
+
+- `/zene-felismeres` (majd mikrofon bekapcsolása és 10 másodperc felvétel)
+- `/zene-felismeres` (majd hangfájl csatolása)
+- Hangcsatornában: "Hey Hero, mi ez a zene?"
+
+## Működés módja
+
+A parancsot két módon használhatod:
+
+### 1. Szöveges csatornában
+1. Írd be a `/zene-felismeres` parancsot
+2. A bot felajánlja a mikrofon bekapcsolását vagy fájl feltöltését
+3. Készíts legalább 5 másodperces felvételt a felismerni kívánt zenéről
+4. A bot elemzi a hangmintát és megpróbálja azonosítani a zenét
+
+### 2. Hangcsatornában
+1. Csatlakozz egy hangcsatornához a bottal együtt (lásd: [/hangcsatorna](/HeroAI/parancsok/hangcsatorna))
+2. Amikor zene szól, mondd: "Hey Hero, mi ez a zene?"
+3. A bot meghallgatja a zenét és azonosítja
+
+## Visszaadott információk
+
+- **Dal címe**: A felismert dal címe
+- **Előadó**: A dal előadója/zeneszerzője
+- **Album**: Az album, amin a dal megjelent
+- **Megjelenés éve**: A dal kiadásának éve
+- **Műfaj**: A dal műfaja
+- **Linkek**: Linkek a dal meghallgatásához különböző platformokon (Spotify, YouTube, stb.)
+
+## Korlátozások
+
+- **Minimális hossz**: Legalább 5 másodperc zenére van szükség a felismeréshez
+- **Napi limit**: Ingyenes felhasználók napi 5 felismerést végezhetnek, [prémium](/HeroAI/kezdes/premium) felhasználók napi 30-at
+- **Fájlméret**: Maximum 10 MB méretű hangfájlok tölthetők fel
+- **Hangminőség**: A felismerés pontossága függ a hangminőségtől és a háttérzajtól
+- **Adatbázis**: A bot nem ismer fel minden dalt, főleg a nagyon új vagy nagyon ritka zenéket
+
+## Tippek
+
+- A legjobb eredmény érdekében használd a dal jellegzetes részét (refrén)
+- Próbálj minél tisztább felvételt készíteni, minimális háttérzajjal
+- Ha nem sikerül az azonosítás, próbálj hosszabb részletet rögzíteni
+- Hangszerelés nélküli dallamok (pl. dúdolás) azonosítása kevésbé pontos 
