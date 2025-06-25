@@ -1,6 +1,6 @@
 ---
-title: '/rajz'
-description: 'Készíts képeket a HeroAI segítségével'
+title: "/rajz"
+description: "Generálj egy eddig még nem létező képet!"
 ---
 
 # /rajz parancs
@@ -10,44 +10,43 @@ A `/rajz` parancs lehetővé teszi, hogy szöveges leírás alapján képeket ge
 ## Használat
 
 ```
-/rajz [leírás] [stílus] [arány]
+/rajz [mód] [nyelv] [leírás] [stílus]
 ```
 
 ### Paraméterek
 
-| Paraméter | Típus | Leírás | Kötelező |
-|-----------|------|---------|----------|
-| leírás | szöveg | A kép részletes leírása | Igen |
-| stílus | választás | A kép stílusa (pl. fotorealisztikus, rajzfilm, festmény) | Nem |
-| arány | választás | A kép méretaránya (pl. 1:1, 16:9, 9:16) | Nem |
+| Paraméter | Típus     | Leírás                                                               | Kötelező |
+| --------- | --------- | -------------------------------------------------------------------- | -------- |
+| mód       | választás | Modell választása (gyors - 1 db rosszabb kép \| szép - 4 db jó kép)  | Igen     |
+| nyelv     | választás | A leírás nyelvének kiválasztása (angol / magyar)                     | Igen     |
+| leírás    | szöveg    | A kép részletes leírása                                              | Igen     |
+| stílus    | választás | A kép stílusa (pl. Realisztikus, Impresszionista, CyberPunk, stb...) | Nem      |
 
 ## Példák
 
-- `/rajz egy aranyos macska egy karosszékben`
-- `/rajz futurisztikus város napnyugtakor stílus: sci-fi arány: 16:9`
-- `/rajz egy erdei tisztás tele virágokkal stílus: festmény`
-- `/rajz portré egy harcosról középkori páncélban stílus: realisztikus arány: 3:4`
+- `/rajz mód:gyors nyelv:magyar leírás:egy aranyos macska egy karosszékben`
+- `/rajz mód:szép nyelv:magyar leírás:futurisztikus város stílus:CyberPunk`
+- `/rajz mód:szép nyelv:angol leírás:expensive mansion with beautiful flowers around it stílus:Realisztikus`
 
 ## Elérhető stílusok
 
-- **Fotorealisztikus**: Valósághoz hű, fotószerű megjelenés
+- **Absztrakt**: Absztrakt, valóságtól elrugaszkodó megjelenésű kép
+- **CyberPunk**: Futurisztikus, színes rajz
+- **Graffiti**: Spray painthez hasonlító rajz
+- **Impresszionista**: Lágy fények, pillanatnyi benyomásokat ábrázoló rajz
+- **Kubista**: Töredezett formákból álló rajz
 - **Rajzfilm**: Cartoon stílusú, stilizált rajz
-- **Festmény**: Festményszerű, művészi megjelenés
-- **Sci-fi**: Futurisztikus, tudományos-fantasztikus stílus
-- **Fantasy**: Mágikus, fantázia világot idéző stílus
-- **Anime**: Japán anime stílusú rajz
-- **Absztrakt**: Nem realisztikus, absztrakt művészeti stílus
+- **Realisztikus**: Valósághű, fotorealisztikus kép
+- **Torz**: Nem hihető, eltorzult elemekből álló kép
 
 ## Korlátozások
 
-- **Napi limit**: Ingyenes felhasználók napi 5 képet generálhatnak, [prémium](/HeroAI/kezdes/premium) felhasználók korlátlan mennyiséget
-- **Méretkorlátozás**: Standard felbontás 1024x1024 pixel, prémium felhasználók nagyobb felbontást kérhetnek
 - **Tartalmi szűrés**: A bot nem generál erőszakos, szexuális vagy más nem megfelelő tartalmú képeket
-- **Generálási idő**: A kép elkészítése 10-20 másodpercet vehet igénybe
+- **Generálási idő**: A kép elkészítése általában 20-30 másodpercet vesz igénybe, de ez az időtartam változhat
 
 ## Tippek
 
 - Minél részletesebben írod le, amit szeretnél látni, annál pontosabb lesz a végeredmény
 - Érdemes megadni a színeket, hangulatot, világítást a leírásban
 - Kísérletezz különböző stílusokkal ugyanarra a leírásra
-- Ha nem vagy elégedett az eredménnyel, próbálj meg más szavakat használni vagy átfogalmazni a leírást 
+- Ha nem vagy elégedett az eredménnyel, próbáld meg újragenerálni a képet az "Újragenerálás" gombot használva, vagy más szavakat használni a leírásban

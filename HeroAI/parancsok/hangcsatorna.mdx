@@ -1,63 +1,30 @@
 ---
-title: '/hangcsatorna'
-description: 'Beszélgess a HeroAI-val hanghívásokban'
+title: "/hangcsatorna"
+description: "A bot csatlakozik a hangcsatornádhoz és felolvassa, amit írsz a csatorna csevegőjébe."
 ---
 
 # /hangcsatorna parancs
 
-A `/hangcsatorna` parancs lehetővé teszi, hogy a HeroAI csatlakozzon a Discord hangcsatornádhoz, és ott élőszóban kommunikálhass vele.
+A `/hangcsatorna` parancs lehetővé teszi, hogy a HeroAI csatlakozzon a Discord hangcsatornádhoz, és ott előben olvassa fel a csatorna csevegőjének változatos beszélgetéseit.
 
 ## Használat
 
 ```
-/hangcsatorna [művelet] [nyelv]
+/hangcsatorna
 ```
-
-### Paraméterek
-
-| Paraméter | Típus | Leírás | Kötelező |
-|-----------|------|---------|----------|
-| művelet | választás | A végrehajtandó művelet (csatlakozás, kilépés) | Igen |
-| nyelv | választás | A hangfelismerés és beszéd nyelve | Nem |
 
 ## Példák
 
-- `/hangcsatorna művelet: csatlakozás`
-- `/hangcsatorna művelet: csatlakozás nyelv: angol`
-- `/hangcsatorna művelet: kilépés`
-
-## Műveletek
-
-- **Csatlakozás**: A bot csatlakozik ahhoz a hangcsatornához, ahol jelenleg tartózkodsz
-- **Kilépés**: A bot kilép a hangcsatornából
-
-## Támogatott nyelvek
-
-- **Magyar**: Alapértelmezett nyelv
-- **Angol**: Amerikai angol
-- **Német**: Sztenderd német
-- **Francia**: Sztenderd francia
+- `/hangcsatorna`
 
 ## Hogyan működik
 
-1. Használd a `/hangcsatorna művelet: csatlakozás` parancsot
+1. Használd a `/hangcsatorna` parancsot
 2. A bot csatlakozik a hangcsatornához, ahol éppen vagy
-3. Beszélj szabadon a mikrofonba, a bot automatikusan felismeri a hangodat
-4. A bot élőszóban válaszol a kérdéseidre és parancsaidra
-5. Amikor végezted, használd a `/hangcsatorna művelet: kilépés` parancsot, vagy egyszerűen lépj ki te magad a csatornából
+3. Írj a hangcsatorna csevegőjébe\!
+4. A bot élőszóban válaszol a kérdéseidre
+5. Amikor végeztél, használd a `Kilépés` gombot, vagy egyszerűen lépj ki te magad a csatornából
 
-## Korlátozások
-
-- **Időkorlát**: Ingyenes felhasználók napi 10 percig használhatják a funkciót, [prémium](/HeroAI/kezdes/premium) felhasználók napi 60 percig
-- **Felhasználók száma**: Maximum 5 felhasználó lehet a csatornában a bot mellett
-- **Hangminőség**: A hangminőség függ az internetkapcsolat sebességétől
-- **Nyelvfelismerés**: A hangfelismerés pontossága függ a mikrofon minőségétől és a háttérzajtól
-- **Megszakítás**: Ha 5 percig nincs aktivitás, a bot automatikusan kilép a csatornából
-
-## Tippek
-
-- Használj minőségi mikrofont a jobb hangfelismerés érdekében
-- Beszélj tisztán és érthetően
-- Kerüld a nagyon zajos környezetet
-- Mondd a "Hey Hero" szavakat a bot külön aktiválásához, ha több ember van a csatornában
-- Tartsd be a szüneteket a mondatok között, hogy a bot megfelelően tudjon válaszolni 
+<Note>
+  A bot nem hallja, hogy mit mondasz a hangcsatornában, de beszélni tud\!
+</Note>

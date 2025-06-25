@@ -1,58 +1,50 @@
 ---
-title: '/hatterkep'
-description: 'Készíts egyedi háttérképeket'
+title: "/háttérkép"
+description: "Generálj egy egyedi háttérképet!"
 ---
 
-# /hatterkep parancs
+# /háttérkép parancs
 
-A `/hatterkep` parancs lehetővé teszi, hogy egyedi, magas minőségű háttérképeket generálj a leírásod alapján. Ezek a képek optimalizáltak asztali és mobil háttérképnek.
+A `/háttérkép` parancs lehetővé teszi, hogy egyedi mobil háttérképeket generálj.
 
 ## Használat
 
 ```
-/hatterkep [leírás] [típus] [stílus]
+/háttérkép [leírás] [stílus] [perspektíva] [téma]
 ```
 
 ### Paraméterek
 
-| Paraméter | Típus | Leírás | Kötelező |
-|-----------|------|---------|----------|
-| leírás | szöveg | A háttérkép részletes leírása | Igen |
-| típus | választás | Asztali vagy mobil háttérkép | Nem |
-| stílus | választás | A háttérkép vizuális stílusa | Nem |
+| Paraméter   | Típus     | Leírás                                                             | Kötelező |
+| ----------- | --------- | ------------------------------------------------------------------ | -------- |
+| leírás      | szöveg    | A háttérkép részletes leírása                                      | Igen     |
+| stílus      | választás | A háttérkép vizális stílusa (Geometriai alakzatok / Absztrakt)     | Igen     |
+| perspektíva | választás | A háttérkép perspektívája (Alulról fényképezett / Egy iránypontos) | Igen     |
+| téma        | választás | A háttérkép színtémája (Világos / Sötét)                           | Igen     |
 
 ## Példák
 
-- `/hatterkep hegyi táj napnyugtakor`
-- `/hatterkep futurisztikus város éjszaka típus: mobil`
-- `/hatterkep absztrakt mintázat kék és lila színekben stílus: minimál`
-- `/hatterkep erdő ködben stílus: fantasy típus: asztali`
-
-## Típusok
-
-- **Asztali**: 16:9 méretarányú, 1920x1080 pixel felbontású háttérkép
-- **Mobil**: 9:16 méretarányú, 1080x1920 pixel felbontású háttérkép
+- `/hatterkep leírás:hegyi táj napnyugtakor stílus:Absztrakt perspektíva:Egy iránypontos téma:Világos`
+- `/hatterkep leírás:futurisztikus város éjszaka stílus:Absztrakt perspektíva:Egy iránypontos téma:Sötét`
+- `/hatterkep leírás:sötét homályba borult híd stílus:Geometriai alakzatok perspektíva:Alulról fényképezett téma:Sötét`
 
 ## Stílusok
 
-- **Fotorealisztikus**: Valódi fényképhez hasonló megjelenés
-- **Minimál**: Egyszerű, letisztult dizájn
-- **Fantasy**: Mágikus, fantasztikus világot idéző
-- **Sci-fi**: Futurisztikus, high-tech megjelenés
-- **Művészi**: Festményszerű, művészi stílus
-- **Retro**: Klasszikus, retro hatású megjelenés
-- **Természet**: Természeti tájakat kiemelő stílus
+- **Geometriai alakzatok**: Kubista stílusú, egyenes vonalakból álló kép
+- **Absztrakt**: Nem egyenes vonalakból álló, részletgazdagabb kép
+
+## Perspektíva
+
+- **Alulról fényképezett**: A "képet készítő kamera" a tárgy alatt helyezkedik el
+- **Egy iránypontos**: Minden párhuzamos vonal egyetlen, a horizontvonalon elhelyezkedő eltűnési pont felé fut össze
 
 ## Korlátozások
 
-- **Napi limit**: Ingyenes felhasználók napi 3 háttérképet generálhatnak, [prémium](/HeroAI/kezdes/premium) felhasználók napi 15-öt
-- **Felbontás**: Alapértelmezett felbontás asztali 1920x1080, mobil 1080x1920. Prémium felhasználók magasabb felbontást is kérhetnek
 - **Tartalmi szűrés**: A bot nem generál nem megfelelő tartalmú háttérképeket
-- **Letöltés**: A generált háttérképek 24 óráig érhetők el letöltésre, utána automatikusan törlődnek
+- **Generálási idő**: A kép elkészítése általában 20-30 másodpercet vesz igénybe, de ez az időtartam változhat
 
 ## Tippek
 
 - Az egyszerűbb leírások gyakran jobb eredményt adnak háttérképek esetén
-- Érdemes megadni a fő színeket vagy hangulatot a leírásban
-- Ha a háttérképet konkrét eszközhöz készíted, válaszd a megfelelő típust
-- Kerüld a túl sok részlet vagy karakter kérését háttérképeknél 
+- Érdemes megadni a fő színeket vagy hangulatot a leírásban is
+- Kerüld a túl sok részlet kérését háttérképeknél
