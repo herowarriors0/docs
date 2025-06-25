@@ -7,7 +7,7 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "redirects": [
     {
       "source": "/",
@@ -54,18 +54,22 @@
         "tab": "PixelAI",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Kezdés",
             "pages": [
-              "api-reference/introduction"
+              "PixelAI/kezdes/bevezeto",
+              "PixelAI/kezdes/elso-lepesek",
+              "PixelAI/kezdes/okos-jatekok"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Játék menete",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "PixelAI/jatek-menete/belepes",
+              "PixelAI/jatek-menete/fomenu",
+              "PixelAI/jatek-menete/lobby",
+              "PixelAI/jatek-menete/jatek-menete",
+              "PixelAI/jatek-menete/korok",
+              "PixelAI/jatek-menete/jatek-vege"
             ]
           }
         ]
