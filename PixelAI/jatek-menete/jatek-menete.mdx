@@ -1,92 +1,63 @@
 ---
-title: 'Játék menete'
-description: 'A PixelAI játékmenetének részletes bemutatása'
+title: "Játék menete"
+description: "A PixelAI játékmenetének részletes bemutatása"
 ---
 
 # A PixelAI játékmenet
 
-A PixelAI játékmenet dinamikus és fordulatos élményt nyújt. Ebben a részben részletesen bemutatjuk a játék alapvető elemeit, a fordulók menetét és a stratégiákat.
+A PixelAI játékmenete rendkívül egyszerű.
 
 ## Alapvető játékmenet
 
-A PixelAI játékot általában 3-8 játékos játssza, és a következő alapelemekből áll:
-
-1. **Fordulók** - A játék 3-10 fordulóból áll (a beállításoktól függően)
-2. **Kreatív kihívások** - Minden fordulóban különböző kreatív feladatokat kell megoldani
-3. **Szavazás** - A játékosok értékelik egymás alkotásait
-4. **Pontozás** - A szavazatok alapján pontokat kapsz
-5. **Végső rangsor** - A játék végén a pontok összesítésével kialakul a végső sorrend
+A PixelAI játékot 3-10 játékos játssza, és a következő alapelemekből áll:
 
 ## A játékképernyő elemei
 
-![Játékképernyő](/images/pixelai-gameplay.jpg)
-
-1. **Kihívás panel** - Itt látható az aktuális feladat
-2. **Időzítő** - A hátralévő idő
-3. **Játékos panel** - A játékosok listája és pontszámaik
-4. **Kreatív eszközök** - A feladat megoldásához szükséges eszközök
-5. **Chat** - Kommunikáció a többi játékossal (bizonyos játékmódokban)
+1. \*\*Idő \*\*- Minden szakaszra meghatározott idő áll rendelkezésre, és itt láthatod, hogy mennyi idő van még hátra
+2. **Játékosszám** - Ez mutatja, hogy az összes játékosból mennyien vannak kész az adott szakasz feladatával
+3. **Pipa gomb** - Ezzel jelzed, hogy kész vagy
 
 ## Egy forduló menete
 
-Minden forduló a következő szakaszokból áll:
+Minden forduló (kör) 3 vagy 4 szakaszból áll:
 
-### 1. Kihívás bemutatása
-- Az AI bemutatja az aktuális fordulóban megoldandó kreatív kihívást
-- A kihívások típusai lehetnek: rajzolás, történetírás, asszociációk, stb.
-- Minden játékos egyszerre kapja meg ugyanazt a feladatot
+### 1. Mondat kitalálása
 
-### 2. Alkotási fázis
-- Minden játékosnak van egy meghatározott ideje (általában 60-180 másodperc) a feladat megoldására
-- Használhatod a játék által biztosított kreatív eszközöket
-- Az időzítő folyamatosan mutatja a hátralévő időt
+- A feladat egyszerű: írj egy rövid mondatot
+- A mondat bármilyen lehet, de ajánlott kreatív, vicces mondatokat kitalálni
+- Ha nem jut eszedbe semmi, kattints a dobókocka (<Icon icon="dice-d6" color="#ffffff" />) ikonra, ami egy véletlenszerű mondatot állít elő
 
-### 3. Szavazási fázis
-- Amikor minden játékos befejezte a feladatot (vagy lejárt az idő), kezdődik a szavazás
-- A játékosok megtekintik egymás alkotásait
-- Minden játékos rangsorolja vagy szavaz a kedvenc megoldásaira (a sajátjára nem)
-- A szavazásra is korlátozott idő áll rendelkezésre
+<Note>
+  Ez a szakasz csak az első kör esetén jelenik meg\!
+</Note>
 
-### 4. Eredmények bemutatása
-- Az AI összesíti a szavazatokat és kihirdeti a forduló eredményét
-- A játékosok pontokat kapnak a szavazatok alapján
-- Speciális bónuszpontok is szerezhetők (pl. legkreatívabb, legviccesebb, stb.)
-- Az aktuális pontállás és rangsor megjelenik
+### 2. Rajz
 
-### 5. Következő forduló
-- Rövid szünet után kezdődik a következő forduló
-- Új kihívás, új lehetőségek!
+- Minden játékos kap egy mondatot (ha ez az első kör, akkor az első feladatban leírt mondatok közül, ha nem, akkor az előző kör 3. szakaszában leírt mondatok közül)
+- A feladat ismét egyszerű: rajzold le a mondaton lévő dolgokat
+- A rajz során változtathatsz színt, ecsetméretet, de akár tudsz radírozni vagy kitölteni is.
 
-## Játékmódok és variációk
+### 3. Mondat kitalálása
 
-A PixelAI különböző játékmódokat kínál:
+- Most az előző szakaszban rajzolt képek közül kapod meg az egyiket, és le kell írnod, hogy mi van rajta.
+- Próbáld meg kitalálni, hogy a mondat eredeti írója mire gondolhatott, ugyanis ez alapján kapsz pontokat.
 
-### Klasszikus mód
-- Minden fordulóban más típusú kreatív kihívás
-- Egyensúlyozott pontozási rendszer
-- Ideális első játékélménynek
+### 4. Pontozás
 
-### Tematikus mód
-- Az összes kihívás egy adott téma köré épül
-- Mélyebb történetmesélés és világépítés
-- Tökéletes, ha egy konkrét témakörben szeretnél alkotni
+- Itt tudod megnézni, hogy mennyi pontot kaptál
+- Az `Előzmény` gombra kattintva meg tudod nézni az általad lerajzolt és leírt mondatok útját - illetve, hogy erre mennyi pontot kaptál
+- A saját mondatodra nem kapsz pontot
 
-### Verseny mód
-- Gyorsabb fordulók, kevesebb idő
-- Fokozott verseny, összetettebb pontozás
-- Tapasztalt játékosoknak ajánlott
+## Körök
 
-### Csapat mód
-- Játékosok 2-3 fős csapatokban játszanak
-- Együttműködés a feladatok megoldásában
-- Csapatszintű pontozás
+Ha több, mint 5 játékos van az adott szobában, akkor több kör is lesz a játék során.
 
-## Tippek a sikeres játékhoz
+Amennyiben fennáll ez a helyzet, a második körben - és az utána következő körökben - nem kell új mondatot írni, ugyanis lerajzolandó mondatnak az előző kör leírt mondataiból fogod valamelyiket megkapni.
 
-- **Legyél gyors!** Az idő korlátozott, próbálj meg hatékonyan alkotni
-- **Légy kreatív!** Az eredeti ötletek általában több szavazatot kapnak
-- **Figyelj a részletekre!** A kidolgozott alkotások kiemelkednek
-- **Alkalmazkodj!** Figyeld, mi tetszik a többi játékosnak, és alkalmazkodj
-- **Szórakozz!** A legfontosabb, hogy élvezd a játékot
+| 3 - 4 játékos  | 1 kör |
+| -------------- | ----- |
+| 5 - 6 játékos  | 2 kör |
+| 7 - 8 játékos  | 3 kör |
+| 9 - 10 játékos | 4 kör |
 
-A játék során a [körök](/PixelAI/jatek-menete/korok) változatosak és fokozatosan nehezednek, így folyamatosan új kihívásokkal találkozol. 
+Miután véget ért az összes kör, érkezik a [játék vége](/PixelAI/jatek-menete/jatek-vege).
