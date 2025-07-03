@@ -21,6 +21,7 @@
         "groups": [
           {
             "group": "Kezdés",
+            "icon": "play",
             "pages": [
               "HeroAI/kezdes/bevezeto",
               "HeroAI/kezdes/elso-lepesek",
@@ -29,6 +30,7 @@
           },
           {
             "group": "Ingyenes Parancsok",
+            "icon": "gift",
             "pages": [
               "HeroAI/parancsok/chat",
               "HeroAI/parancsok/rajz",
@@ -40,6 +42,7 @@
           },
           {
             "group": "Fizetős Parancsok",
+            "icon": "sack-dollar",
             "pages": [
               "HeroAI/parancsok/bolcsesseg",
               "HeroAI/parancsok/jokivansag",
@@ -55,6 +58,7 @@
         "groups": [
           {
             "group": "Kezdés",
+            "icon": "play",
             "pages": [
               "PixelAI/kezdes/bevezeto",
               "PixelAI/kezdes/elso-lepesek",
@@ -63,6 +67,7 @@
           },
           {
             "group": "Játék menete",
+            "icon": "gamepad-modern",
             "pages": [
               "PixelAI/jatek-menete/belepes",
               "PixelAI/jatek-menete/fomenu",
