@@ -22,7 +22,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm" /><defs
-     id="defs1"
+     id="defs1" /><g
      inkscape:label="Réteg 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -41,6 +41,6 @@
        id="text1"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.7px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';stroke-width:0.264583"
+         style="font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 12.7px; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; stroke-width: 0.264583"
          x="42.700901"
          y="141.44673">HeroAI</tspan></text></g></svg>
